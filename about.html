@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" type="text/css" href="menu.css" />
+<link rel="stylesheet" type="text/css" href="about.css" />
+
+
+<body>
+
+<h1>THE MAY SHOES</h1>
+
+<div class="navbar">
+  <a href="index.html">HOME</a>
+  <a href="about.html">ABOUT US</a>
+  <div class="dropdown">
+    <button class="dropbtn">PRODUCT</button>
+    <div class="dropdown-content">
+      <a href="product.html">READYMADE</a>
+      <a href="product2.html">PRE-ORDER</a>
+    </div>
+  </div>
+  <a href="gallery.html">GALLERY</a>
+  <a href="contact.html">CONTACT US</a>
+</div>
+
+<h1>ABOUT US</h1>
+
+<button class="accordion">BACKGROUND</button>
+<div class="panel">
+  <p id="history">The MAY Shoes was founded in May 2021 by three peer partners, Mohamad Akmalrizan Yusri bin Mahazan, Nur Anati Hamizah binti Ramdan and Nur Zulaikha binti Zul Azmi who are also university students and starting to get used to business of custom painted shoes. We provide shoe designing services as per customer's request. Each pair of shoes is custom hand-painted by us. We are open to any and all design ideas you may have! Our shoes are only available for purchase online, and they are shipped from our Shoefinity Studio in Bukit Bintang, Kuala Lumpur.</p>
+  <p id="history">MAY, you're a one-of-a-kind individual who loves custom fashion!</p>
+</div>
+
+<button class="accordion">OUR MOTTO</button>
+<div class="panel">
+  <p id="motto">Unique, Stylish, Urban.</p>
+</div>
+
+<button class="accordion">TEAM</button>
+<div class="panel">
+  <p id="history">Mohamad Akmalrizan Yusri bin Mahazan</p>
+  <br>
+  <p id="history">Nur Anati Hamizah binti Ramdan</p>
+  <br>
+  <p id="history">Nur Zulaikha binti Zul Azmi</p>
+
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+
+</body>
+
+</html>

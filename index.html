@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" type="text/css" href="menu.css" />
+<link rel="stylesheet" type="text/css" href="arrival.css" />
+<link rel="stylesheet" type="text/css" href="coming.css" />
+
+<style>
+
+</style>
+<body>
+<h1>THE MAY SHOES</h1>
+
+<div class="navbar">
+  <a href="index.html">HOME</a>
+  <a href="about.html">ABOUT US</a>
+  <div class="dropdown">
+    <button class="dropbtn">PRODUCT</button>
+    <div class="dropdown-content">
+      <a href="product.html">READYMADE</a>
+      <a href="product2.html">PRE-ORDER</a>
+    </div>
+  </div>
+  <a href="gallery.html">GALLERY</a>
+  <a href="contact.html">CONTACT US</a>
+</div>
+
+<h1>NEW ARRIVAL</h1>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="Gambar/Kasut 8.jpg" style="width:40%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="Gambar/Kasut 9.jpg" style="width:40%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="Gambar/Kasut 9.jpg" style="width:40%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="Gambar/Kasut 10.jpg" style="width:40%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="Gambar/Kasut 11.jpg" style="width:40%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+
+<h1>COMING SOON</h1>
+
+<div class="row">
+    <div class="container">
+    <img src="Gambar/nike2.jpeg" alt="nike" class="image">
+    <div class="overlay">
+    <div class="text">WAIT</div>
+    </div>
+    </div>
+	
+	<div class="container">
+    <img src="Gambar/nike3.jpeg" alt="nike" class="image">
+    <div class="overlay">
+    <div class="text">FOR</div>
+    </div>
+    </div>
+	
+	<div class="container">
+    <img src="Gambar/nike4.jpeg" alt="nike" class="image">
+    <div class="overlay">
+    <div class="text">IT</div>
+    </div>
+    </div>
+</div>
+
+</body>
+</html>
